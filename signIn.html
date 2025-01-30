@@ -4,6 +4,7 @@
         <title>Sign In to Antoflix</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "signIn-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
         <link rel="icon" href="images/favicon_ico" type="image/x-icon">
 
@@ -21,13 +22,14 @@
     <!-- Manifest file -->
     <link rel="manifest" href="images/site.webmanifest">
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     </head>
 
     <body>
         <header class = "header">
 
             <div class = "logo">
-                <img src="images/Antoflix-logo.2.png" class = "small-logo" alt = "Logo">
+                <a href="index.html"><img src="images/Antoflix-logo.2.png" class = "small-logo" alt = "Logo"></a> 
             </div>
 
             <div class = "text-container">
@@ -40,15 +42,24 @@
         <div class = "form-box">
             <form class = "form">
     
-                <span class = "title-signIn"> Register </span>
+                <span class = "title-signIn"> Sign In </span>
                 <span class = "subtitle"> Enter your Antoflix email adress and password to continue.</span>
     
                 <div class = "form-container">
-    
                     <input type ="email" class = "input" placeholder = "Enter your email">
-                    <input type = "password" class = "input" placeholder = "Password"> 
-    
+
+                    <!--Password field-->
+                    <div class="password-container">
+                        <input type = "password" class = "input" placeholder = "Password" id = "password"> 
+                        <span class = "toggle-password">
+                        <i class="fa-solid fa-eye" id="togglePassword"></i>
+                        
+                        </span>
+                    </div>
                 </div>
                 <button> Sign In </button>
+            </form>
+        </div>
+        <script src="signIn-script.js" defer></script>
     </body>
 </html>

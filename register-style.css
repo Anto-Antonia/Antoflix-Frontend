@@ -126,3 +126,26 @@ header h1{
     color: #005ce6;
     text-decoration: underline;
 }
+.password-container{
+    position: relative;
+    width: 100%;
+}
+
+.password-container input{
+    width: 100%;
+    padding-right: 40px;
+}
+
+.toggle-password{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-80%);
+    cursor: pointer;
+    font-size: 20px;
+    color: gray;
+}
+
+.toggle-password:hover {
+    color: black;
+}

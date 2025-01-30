@@ -4,6 +4,7 @@
         <title>Register to Antoflix </title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel = "stylesheet" href = "register-style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <link rel="icon" href="images/favicon_ico" type="image/x-icon">
 
@@ -20,12 +21,16 @@
 
     <!-- Manifest file -->
     <link rel="manifest" href="images/site.webmanifest">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     </head>
 
     <body>
 
         <header class = "header"> 
+            
             <h1> Register to&nbsp;<span style ="color: black"> Anto</span><span style="color: red">flix</span></h1> <!--"&nbsp" comes from non-breaking space-->
+            
+
         </header>
     
         <div class = "form-box">
@@ -38,8 +43,15 @@
 
                 <input type ="text" class = "input" placeholder = "Username">
                 <input type ="email" class = "input" placeholder = "Enter your email">
-                <input type = "password" class = "input" placeholder = "Password"> 
 
+                <div class="password-container">
+                    <input type = "password" class = "input" placeholder = "Password" id = "password"> 
+                    <span class = "toggle-password">
+                    <i class="fa-solid fa-eye" id="togglePassword"></i>
+                    
+                    </span>
+                </div>
+            
             </div>
             <button> Register </button>
         </form>
@@ -47,6 +59,6 @@
             <p>Already have an account? <a href = "signIn.html">Log in</a></p>
         </div>
         </div>
-
+        <script src="signIn-script.js" defer></script>
     </body>
     </html>
