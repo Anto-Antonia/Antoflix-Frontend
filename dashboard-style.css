@@ -2,6 +2,26 @@ body{
     background-color: rgb(22, 21, 21);
     display: flex;
 }
+.homepage-box{
+    width: 60%; /* Adjust width as needed */
+    max-width: 1200px; /* Prevents it from being too large */
+    height: 90rem; /* Adjust height as needed */
+    
+    background-color: rgb(32, 31, 31); /* Semi-transparent black */
+    border-radius: 10px; /* Smooth corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    
+    margin-top: 78px;
+    margin-left: 340px;
+    padding: 20px; /* Space inside */
+    color: white; /* Text color */
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position:absolute
+}
 
 .header{
     position: relative;
@@ -52,5 +72,37 @@ body{
 
 .main-header li a:hover {
     color: red; /* Change color on hover */
+}
+
+.profile {
+    position: absolute;
+    top: 23px;
+    right: 300px;
+
+    width: 40px; /* Adjust circle size */
+    height: 40px;
+
+    background-color: black; /* Circle background */
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+     box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+    
+}
+.profile a{
+    text-decoration: none;
+    color: rgb(248, 0, 0);
+}
+
+.profile a:hover{
+    color: white;
+}
+
+.profile i {
+    font-size: 20px;
+    cursor: pointer; /* Indicate it's clickable */
 }
 
