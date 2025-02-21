@@ -3,12 +3,12 @@ body{
     display: flex;
 }
 .homepage-box{
-    width: 60%; /* Adjust width as needed */
+    width: 60%; 
     max-width: 1200px; /* Prevents it from being too large */
-    height: 90rem; /* Adjust height as needed */
+    height: 90rem; 
     
     background-color: rgb(32, 31, 31); /* Semi-transparent black */
-    border-radius: 10px; /* Smooth corners */
+    border-radius: 10px; 
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5); /* Subtle shadow */
     
     margin-top: 78px;
@@ -20,7 +20,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    position:absolute
+    position: absolute;
 }
 
 .header{
@@ -40,6 +40,7 @@ body{
     font-family: 'Courier New', Courier, monospace;
     font-size: 25px;
     padding-bottom: 5px;
+    display: flex;
 }
 
 .flix{
@@ -49,6 +50,7 @@ body{
 .main-nav{
     display: flex;
     align-items: center;
+    z-index: 1000;
 }
 
 .main-header{
@@ -77,7 +79,7 @@ body{
 .profile {
     position: absolute;
     top: 23px;
-    right: 300px;
+    right: 390px;
 
     width: 40px; /* Adjust circle size */
     height: 40px;
@@ -104,5 +106,47 @@ body{
 .profile i {
     font-size: 20px;
     cursor: pointer; /* Indicate it's clickable */
+}
+
+.dropdown{
+    position: relative;
+}
+
+.dropdown-menu{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    list-style: none;
+    padding: 10px 0;
+    min-width: 150px;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+.dropdown-menu li{
+    padding: 8px 15px;
+}
+
+.dropdown-menu li a{
+    color: rgb(240, 199, 199);
+    text-decoration: none;
+    display: block;
+    font-size: 14px;
+}
+
+.dropdown-menu li:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.dropdown i{
+    margin-left: 5px;
+    font-size: 12px;
 }
 
