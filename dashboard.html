@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
     <!-- Default favicon-->
-    <link rel="icon" href="images/favicon_ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="images/favicon_ico">
 
     <!--Png icons for dif resolutions-->
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
@@ -22,6 +22,8 @@
 
     <!-- Manifest file -->
     <link rel="manifest" href="images/site.webmanifest">
+
+    <script src="dashboard-script.js" defer></script>
 </head>
 <body>
     <header class = "header">
@@ -38,26 +40,27 @@
                     <a href="/series/"><strong>Series</strong></a>
                 </li>
                 
-                <div class = "dropdown">
+            <div class = "dropdown">
                 <li id="menu-item-3" class="menu-item-3">
                     <a href="/genres/"><strong>Genres</strong><i class="fa-solid fa-chevron-down"></i></a>
                     <ul class = "dropdown-menu">
                         <li><a href="/genres/action">Action</a></li>
-                        <li><a href="/genres/action">Fantasy</a></li>
-                        <li><a href="/genres/action">Horror</a></li>
-                        <li><a href="/genres/action">Comedy</a></li>
-                        <li><a href="/genres/action">Musical</a></li>
-                        <li><a href="/genres/action">Drama</a></li>
-                        <li><a href="/genres/action">Adventure</a></li>
-                        <li><a href="/genres/action">SF</a></li>
-                        <li><a href="/genres/action">Kids</a></li>
-                        <li><a href="/genres/action">Superhero</a></li>
-                        <li><a href="/genres/action">Animation</a></li>
-                        <li><a href="/genres/action">Anime</a></li>
-                        <li><a href="/genres/action">Zombie Horror</a></li>
+                        <li><a href="/genres/fantasy">Fantasy</a></li>
+                        <li><a href="/genres/horror">Horror</a></li>
+                        <li><a href="/genres/comedy">Comedy</a></li>
+                        <li><a href="/genres/musical">Musical</a></li>
+                        <li><a href="/genres/drama">Drama</a></li>
+                        <li><a href="/genres/adventure">Adventure</a></li>
+                        <li><a href="/genres/sf">SF</a></li>
+                        <li><a href="/genres/kids">Kids</a></li>
+                        <li><a href="/genres/superhero">Superhero</a></li>
+                        <li><a href="/genres/animation">Animation</a></li>
+                        <li><a href="/genres/anime">Anime</a></li>
+                        <li><a href="/genres/zombie">Zombie Horror</a></li>
                     </ul>
                 </li>
-                </div>
+            </div>
+                
 
                 <li id="menu-item-4" class="menu-item-4">
                     <a href="/a-z/"><strong>A-Z</strong></a>
@@ -74,14 +77,19 @@
         </div>
 
         <div class = "profile">
-            <a href="/profile">
+            <div class="profile-icon" id="profileIcon">
                 <i class="fa-solid fa-user"></i>
-            </a>
+            </div>
+
+            <div class="profile-dropdown" id="profileDropdown">
+                <a href="/logout">Logout</a>
+            </div>
         </div>
     </header>
 
     <div class="homepage-box">
         
     </div>
+    
 </body>
 </html>

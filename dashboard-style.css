@@ -77,35 +77,54 @@ body{
 }
 
 .profile {
-    position: absolute;
+    position: relative;
+    display: inline-block;
+    margin-left: 150px;
+}
+
+.profile-icon{
+    color: white;
     top: 23px;
-    right: 390px;
 
-    width: 40px; /* Adjust circle size */
-    height: 40px;
-
-    background-color: black; /* Circle background */
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
     border-radius: 50%;
 
+    background-color: black;
     display: flex;
     align-items: center;
     justify-content: center;
 
-     box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
-    
-}
-.profile a{
-    text-decoration: none;
-    color: rgb(248, 0, 0);
+    width: 30px;
+    height: 30px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
 }
 
-.profile a:hover{
+.profile-dropdown{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+    padding: 10px 0;
+    min-width: 120px;
+    display: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.profile-dropdown a{
+    display: block;
     color: white;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.profile i {
-    font-size: 20px;
-    cursor: pointer; /* Indicate it's clickable */
+.profile-dropdown a:hover{
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .dropdown{
