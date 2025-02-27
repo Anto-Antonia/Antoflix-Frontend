@@ -73,13 +73,52 @@ body{
 }
 
 .main-header li a:hover {
-    color: red; /* Change color on hover */
+    color: red; 
+}
+
+.search-bar{
+    position: absolute;
+    color: aliceblue;
+    margin-left: 1460px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.search-bar i{
+    font-size: 23px;
+     transition: transform 0.3s ease;
+}
+.search-bar i:hover{
+    color: crimson;
+}
+
+.search-input{
+    display: none; /* Initially hidden */
+    position: absolute;
+    left: -220px; /*  make the search bar appear to the left */
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 200px; 
+    opacity: 0; /* Start with invisible */
+    transform: scaleX(0); /* Start with scale to 0 (hidden) */
+    transform-origin: left center; /* Transform scale from the left */
+    transition: all 0.3s ease-in-out; /* Transition for smooth effect */
+}
+
+.search-bar.open .search-input {
+    display: block;
+    opacity: 1; /* Make it visible */
+    transform: scaleX(1);
 }
 
 .profile {
     position: relative;
     display: inline-block;
-    margin-left: 150px;
+    margin-left: 260px;
 }
 
 .profile-icon{

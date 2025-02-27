@@ -15,11 +15,6 @@ body {
     position: relative;
 }
 
-.logo {
-    max-width: 1530px;
-    border-radius: 50px;
-}
-
 .site-logo {
     font-family: 'Courier New', Courier, monospace;
     font-size: 40px;
@@ -106,6 +101,11 @@ a {
     border-radius: 20px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
 
+}
+
+.logo {
+    max-width: 1530px;
+    border-radius: 50px;
 }
 
 .background {
