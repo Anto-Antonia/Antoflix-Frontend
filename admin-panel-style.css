@@ -45,6 +45,20 @@ body{
 
 }
 
+.top-box{
+    position: absolute;
+    top: 46px
+}
+
+.top-box a{
+    text-decoration: none;
+    color: rgb(167, 160, 160);
+}
+
+.top-box a:hover{
+    color: white;
+}
+
 .content{
     width: 100%;
     text-align: center;
@@ -66,21 +80,32 @@ body{
 }
 
 .settings-content p{
+    margin-top: 60px;
     padding-left: 30px;
-    border:rgb(22, 21, 21) solid;
     margin-left: 200px;
     font-size: 20px;
     gap: 4px;
-}
-
-.content h3 {
-    margin-bottom: 5px; /* Reduce space */
 }
 
 p{
     margin-bottom: 5px; /* Small space between p and list */
     text-align: left; /* Aligns text properly */
     font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: center;
+}
+
+.headline{
+    padding-left: 100px;
+    margin-left: 200px;
+    font-size: 30px;
+    margin-top: 0;
+    padding-top: 0;
+    left: 70px;
+}
+
+.content h3 {
+    margin-bottom: 5px; /* Reduce space */
 }
 
 hr{
@@ -110,4 +135,82 @@ hr{
 .control-pannel li:hover, .control-pannel li.active {
     background: rgb(60, 60, 60);
     border-radius: 5px;
+}
+
+.settings-content h2{
+    margin-right: 200px;
+    padding-bottom: 20px;
+}
+
+.settings-content p{
+    position: relative;
+    margin-left: 0px;
+    margin-right: auto;
+    padding-left: 300px;
+    bottom: 50px;
+}
+
+.settings-content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 200px; /* Adjust as needed */
+    margin-right: 130px;
+}
+
+.settings-content label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.settings-content input {
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #252525;
+    color: white;
+    outline: none;
+}
+
+.settings-content input:focus {
+    border-color: #888;
+}
+
+.settings-content button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.settings-content button:hover {
+    background-color: #45a049;
+}
+
+.search-container{
+    margin-right: 100px;
+    position: center;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.search-result {
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.result-box {
+    background-color: #252525;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    color: white;
 }
