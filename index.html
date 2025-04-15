@@ -70,16 +70,69 @@
         </div>
         <div class="album-card-wrapper">
                 <div class="movie-cards">
-                    <div class="movie-card" id="movie-item-1"><p>Movie 1</p></div>
-                    <div class="movie-card" id="movie-item-2"><p>Movie 2</p></div>
-                    <div class="movie-card" id="movie-item-3"><p>Movie 3</p></div>
-                    <div class="movie-card" id="movie-item-4"><p>Movie 4</p></div>
-                    <div class="movie-card" id="movie-item-5"><p>Movie 5</p></div>
-                    <div class="movie-card" id="movie-item-6"><p>Movie 6</p></div>
-                    <div class="movie-card" id="movie-item-7"><p>Movie 7</p></div>
-                    <div class="movie-card" id="movie-item-8"><p>Movie 8</p></div>
-                    <div class="movie-card" id="movie-item-9"><p>Movie 9</p></div>
-                    
+
+                    <div class="movie-card" id="movie-item-1" 
+                        data-title="Inception" 
+                        data-description="A thief who steals secrets through dreams." 
+                        data-genre="Sci-Fi">
+                        <p>Movie 1</p>
+                    </div>
+
+                    <div class="movie-card" id="movie-item-2" 
+                        data-title="Lunar Odysey" 
+                        data-description="A misterious colony of aliens have to deal with abnormal events coming from their blue moon." 
+                        data-genre="Sci-Fi">
+                        <p>Movie 2</p>
+                    </div>
+
+                    <div class="movie-card" id="movie-item-3" 
+                        data-title="Inception" 
+                        data-description="A thief who steals secrets through dreams." 
+                        data-genre="Sci-Fi">
+                        <p>Movie 3</p>
+                    </div>
+
+                    <div class="movie-card" id="movie-item-4" 
+                        data-title="Inception" 
+                        data-description="A thief who steals secrets through dreams." 
+                        data-genre="Sci-Fi">
+                        <p>Movie 4</p>
+                    </div>
+
+                    <div class="movie-card" id="movie-item-5" 
+                        data-title="Inception" 
+                        data-description="A thief who steals secrets through dreams." 
+                        data-genre="Sci-Fi">
+                        <p>Movie 5</p>
+                    </div>
+
+                    <div class="movie-card" id="movie-item-6" 
+                        data-title="Inception" 
+                        data-description="A thief who steals secrets through dreams." 
+                        data-genre="Sci-Fi">
+                        <p>Movie 6</p>
+                    </div>
+
+                    <div class="movie-card" id="movie-item-7" 
+                        data-title="Inception" 
+                        data-description="A thief who steals secrets through dreams." 
+                        data-genre="Sci-Fi">
+                        <p>Movie 7</p>
+                    </div>
+
+                    <div class="movie-card" id="movie-item-8" 
+                        data-title="Inception" 
+                        data-description="A thief who steals secrets through dreams." 
+                        data-genre="Sci-Fi">
+                        <p>Movie 8</p>
+                    </div>
+
+                    <div class="movie-card" id="movie-item-9" 
+                        data-title="Inception" 
+                        data-description="A thief who steals secrets through dreams." 
+                        data-genre="Sci-Fi">
+                        <p>Movie 9</p>
+                    </div>
                 </div>
 
             <div class="arrow-right">
@@ -88,6 +141,16 @@
         </div>
     </div>
     <br>
+
+    <div class="modal hidden" id="movie-modal">
+        <div class="modal-content">
+            <span id="close-movie-modal" class="close-btn">&times;</span>
+                <h3 id="movie-title">Movie Title</h3>
+                    <p id="movie-description">This is a short description of the movie...</p>
+                    <p><strong>Genre:</strong> <span id="movie-genre">Action</span></p>
+            <button onclick="location.href='/register'" class="register-btn">Register to Watch</button>
+        </div>
+    </div>
 
 </body>
 

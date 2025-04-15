@@ -28,3 +28,33 @@ arrowRight.addEventListener('click', () => {
         movieCards.style.transform = `translateX(-${currentIndex * cardWidth}px)`;
     }
 });
+
+const movieModal = document.getElementById('movie-modal');
+const closeMovieModal = document.getElementById('close-movie-modal');
+const movieTitle = document.getElementById('movie-title');
+const movieDescription = document.getElementById('movie-description');
+const movieGenre = document.getElementById('movie-genre');
+
+document.querySelectorAll('.movie-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const title = card.getAttribute('data-title') || "Unknown Movie";
+    const desc = card.getAttribute('data-description') || "No description.";
+    const genre = card.getAttribute('data-genre') || "N/A";
+
+    movieTitle.textContent = title;
+    movieDescription.textContent = desc;
+    movieGenre.textContent = genre;
+
+    movieModal.classList.remove('hidden');
+  });
+});
+
+closeMovieModal.addEventListener('click', () => {
+  movieModal.classList.add('hidden');
+});
+
+document.addEventListener('keydown', e => {
+  if (e.key === "Escape") {
+    movieModal.classList.add('hidden');
+  }
+});
