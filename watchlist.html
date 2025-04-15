@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Antoflix</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "watchlist-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- Default favicon-->
+    <link rel="icon" type="image/x-icon" href="images/favicon_ico">
+
+    <!--Png icons for dif resolutions-->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" size="16x16" href="images/favicon-16x16.png">
+
+    <!-- Apple touch Icon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="images/android-chrome-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="images/android-chrome-512x512.png">
+
+    <!-- Manifest file -->
+    <link rel="manifest" href="images/site.webmanifest">
+
+    <script src="watchlist-script.js" defer></script>
+</head>
+<body>
+    <header class = "header" id="header">
+        <div class = "logo">
+            <h2> Anto<span class = "flix">flix</span></h2>
+        </div>
+
+        <div class = "main-nav">
+            <ul class = "main-header">
+
+                <li id="menu-item-0" class="menu-item-0">
+                    <a href="dashboard.html"><strong>Home</strong></a>
+                </li>
+
+                <li id="menu-item-1" class="menu-item-1">
+                    <a href="/movies"><strong>Movies</strong></a>
+                </li>
+
+                <li id="menu-item-2" class="menu-item-2">
+                    <a href="/series"><strong>Series</strong></a>
+                </li>
+                
+            <div class = "dropdown">
+                <li id="menu-item-3" class="menu-item-3">
+                    <a href="/genres/"><strong>Genres</strong><i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class = "dropdown-menu">
+                        <li><a href="/genres/action">Action</a></li>
+                        <li><a href="/genres/fantasy">Fantasy</a></li>
+                        <li><a href="/genres/horror">Horror</a></li>
+                        <li><a href="/genres/comedy">Comedy</a></li>
+                        <li><a href="/genres/musical">Musical</a></li>
+                        <li><a href="/genres/drama">Drama</a></li>
+                        <li><a href="/genres/adventure">Adventure</a></li>
+                        <li><a href="/genres/sf">SF</a></li>
+                        <li><a href="/genres/kids">Kids</a></li>
+                        <li><a href="/genres/superhero">Superhero</a></li>
+                        <li><a href="/genres/animation">Animation</a></li>
+                        <li><a href="/genres/anime">Anime</a></li>
+                        <li><a href="/genres/zombie">Zombie Horror</a></li>
+                    </ul>
+                </li>
+            </div>
+
+                <li id="menu-item-5" class="menu-item-5">
+                    <a href="/new-release/"><strong>New Releases</strong></a>
+                </li>
+
+                <li id="menu-item-6" class="menu-item-6">
+                    <a href="/watchlist"><strong>My Watchlist</strong></a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="search-bar">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" class="search-input" placeholder="Titles">
+        </div>
+
+        <div class = "profile">
+            <div class="profile-icon" id="profileIcon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="profile-dropdown" id="profileDropdown">
+                <a href="settings.html">Account</a>
+                <button> Logout </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="homepage-box watchlist-grid" id="watchlist-container">
+        <div class="create-watchlist-box">
+            <i class="fa-solid fa-plus"></i>
+            <p> Create your first watchlist</p>
+        </div>
+    </div>
+
+    <div id="watchlist-modal" class="modal hidden">
+        <div class="modal-content">
+          <h3>Create New Watchlist</h3>
+          <input type="text" id="watchlist-name" placeholder="Enter watchlist name" />
+          <div class="modal-actions">
+            <button id="create-watchlist">Create</button>
+            <button id="cancel-modal">Cancel</button>
+          </div>
+        </div>
+    </div>
+
+</body>
+</html>
