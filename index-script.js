@@ -52,6 +52,7 @@ document.querySelectorAll('.movie-card').forEach(card => {
     const desc = card.getAttribute('data-description') || "No description.";
     const genre = card.getAttribute('data-genre') || "N/A";
     const time = card.getAttribute('data-time') || "No date time release.";
+    const image = card.getAttribute('data-image') || "No image provided.";
 
     movieTitle.textContent = title;
     movieDescription.textContent = desc;
@@ -67,6 +68,9 @@ document.querySelectorAll('.movie-card').forEach(card => {
       tag.textContent = genres.trim();
       genreContainer.appendChild(tag);
     });
+
+    const movieImage = document.getElementById('movie-image');
+    movieImage.setAttribute('src', image)
 
     movieModal.classList.remove('hidden');
   });

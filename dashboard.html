@@ -72,7 +72,7 @@
                 </li>
 
                 <li id="menu-item-6" class="menu-item-6">
-                    <a href="/watchlist"><strong>My Watchlist</strong></a>
+                    <a href="watchlist.html"><strong>My Watchlist</strong></a>
                 </li>
             </ul>
         </div>
@@ -95,7 +95,43 @@
     </header>
 
     <div class="homepage-box">
-        
+        <div class = "content">
+            <h1>Movies</h1>
+            <div class="movie-grid">
+                <div class="movie-item" id="movie-item"
+                    data-image= "images/Chronicles.png"
+                    data-title="Chronicles"
+                    data-description="Kyle, a man from the feauture travles throught space and time ending up in 2024 trying to save the planet from an invasiv alive creature what keeps reproducing rapidly." 
+                    data-genre="Action, Kids, Sci-Fi, Fantasy"
+                    data-time=" 25 May 2022">
+                    <img src="images/Chronicles.png" alt="Movie 5 Poster" class="movie-poster2">
+                    <p>Chronicles</p>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <div class="modal hidden" id="movie-modal">
+        <div class="modal-content">
+            <span id="close-movie-modal" class="close-btn">&times;</span>
+
+                <button class="play-button"><i class="fa-solid fa-play"></i> Play </button>
+                <div class="interaction">
+                <i class="fa-solid fa-plus"></i>
+                </div>
+                <div class="modal-image-container">
+                    <img id="movie-image" src="#" alt="Movie Poster" class="modal-movie-image">
+                    <div class="image-blur-overlay"></div>
+                </div>
+
+                <h3 id="movie-title">Movie Title</h3>
+                <p id="movie-description">This is a short description of the movie...</p>
+
+                <p><strong>Genre:</strong> <span id="movie-genre" class="genre-tags-container">Action</span></p>
+
+                <p><strong>Release Date:</strong><span id="movie-time"> 5 May 1999</span></p>
+        </div>
+    </div>
+
 </body>
 </html>

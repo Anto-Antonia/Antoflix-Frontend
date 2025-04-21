@@ -367,26 +367,81 @@ a {
   }
   
   .modal-content {
-    background-color: #1f1f1f;
-    color: #fff;
-    padding: 2rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    max-width: 600px;
+    width: 90%;
+    background:  #1f1f1f;
+    color: #e7d9d9;
     border-radius: 12px;
-    width: 400px;
-    max-width: 90%;
-    text-align: center;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    overflow: hidden;
     position: relative;
+    animation: modalFadeIn 0.3s ease-out;
+    align-items: center;
   }
+
+  .modal.show .modal-content {
+    animation: modalFadeIn 0.3s ease-out;
+  }
+
+  .modal-image-container {
+    /* position: relative; */
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+
+  .modal-movie-image{
+     width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .image-blur-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    background: linear-gradient(to bottom, transparent, rgba(107, 97, 97, 0.8), #413d3d);
+    pointer-events: none;
+  }
+
+  .modal-content h3,
+  .modal-content p {
+    padding: 0 1.5rem;
+}
   
   .close-btn {
     position: absolute;
     right: 1rem;
     top: 1rem;
-    font-size: 1.5rem;
+    font-size: 2rem; 
+    padding-bottom: 5px;
+    width: 40px; 
+    height: 40px; 
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
-    color: #aaa;
+    color: #000000;
+    z-index: 10; /* Ensure it's above the image */
+    border-radius: 50%; /* Optional: make it circular */
+    background-color: rgba(0, 0, 0, 0.2); /* Optional: soft background */
+  }
+
+  .close-btn:hover{
+    background-color: #c9bfbf;
   }
   
   .register-btn {
+    text-align: center;
     margin-top: 1rem;
     background-color: #e50914;
     color: white;
@@ -415,4 +470,15 @@ a {
     border-radius: 12px;
     font-size: 1rem;
     font-weight: 500;
+  }
+
+  @keyframes modalFadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.95);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
