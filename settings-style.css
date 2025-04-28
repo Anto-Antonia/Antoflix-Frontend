@@ -23,23 +23,27 @@ body{
     position: absolute;
 }
 
-.smaller-box{
-    width: 30%;
-    max-width: 1000px;
-    height: 100%; /* Makes it as tall as homepage-box */
-
-    background-color: rgb(37, 37, 37);
-    border-radius: 10px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+.top-box{
     position: absolute;
-    margin-left: 410px;
+    top: 20px
+}
 
-    top: 0; /* Aligns it at the top */
-    left: -35%; /* Moves it to the left over homepage-box */
+.top-box a{
+    text-decoration: none;
+    color: rgb(167, 160, 160);
+}
+
+.top-box a:hover{
+    color: white;
+}
+
+.top-box i{
+    position: fixed;
+    font-size: 25px;
+    left: 365px; /* Moves it to the far left of the viewport */
+    top: 10px; /* Aligns it at the top of the viewport */
+    padding-top: 20px;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
-    padding-top: 20px;
-    overflow-y: auto; /* allows scrolling if needed*/
-
 }
