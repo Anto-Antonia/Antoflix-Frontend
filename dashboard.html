@@ -99,6 +99,7 @@
             <h1>Movies</h1>
             <div class="movie-grid">
                 <div class="movie-item" id="movie-item"
+                    data-type="movie"
                     data-image= "images/Chronicles.png"
                     data-title="Chronicles"
                     data-description="Kyle, a man from the feauture travles throught space and time ending up in 2024 trying to save the planet from an invasiv alien creature what keeps reproducing rapidly." 
@@ -107,6 +108,19 @@
                     <img src="images/Chronicles.png" alt="Movie 5 Poster" class="movie-poster2">
                     <p>Chronicles</p>
                 </div>
+
+                <div class="movie-item" id="movie-item"
+                    data-type="series"
+                    data-image="images/ZombieApocalypse.jpg"
+                    data-title="Dead Horizon" 
+                    data-description="After a viral outbreak turns most of humanity into savage, fast-moving undead, former paramedic Ethan Cole must fight to survive in a crumbling world. As he journeys through desolate cities and fractured communities, Ethan uncovers chilling secrets behind the outbreak—and realizes the dead aren't the only ones to fear." 
+                    data-genre="Drama, Adventure, Sci-Fi"
+                    data-time=" 19 October 2018"
+                    data-season="1">
+                    <img src="images/ZombieApocalypse.jpg" alt="Movie 6 Poster" class="movie-poster2">
+                    <p>Zombie Apocalypse</p>
+                </div>
+
             </div>
         </div>
     </div>
@@ -119,6 +133,7 @@
                 <div class="interaction">
                 <i class="fa-solid fa-plus"></i>
                 </div>
+
                 <div class="modal-image-container">
                     <img id="movie-image" src="#" alt="Movie Poster" class="modal-movie-image">
                     <div class="image-blur-overlay"></div>
@@ -132,6 +147,42 @@
                 <p><strong>Release Date:</strong><span id="movie-time"> 5 May 1999</span></p>
         </div>
     </div>
+
+    <div class="modal hidden" id="series-modal">
+        <div class="modal-content">
+          <span id="close-series-modal" class="close-btn">&times;</span>
+      
+          <button class="play-button"><i class="fa-solid fa-play"></i> Play </button>
+          <div class="interaction">
+            <i class="fa-solid fa-plus"></i>
+          </div>
+      
+          <div class="modal-image-container">
+            <img id="series-image" src="#" alt="Series Poster" class="modal-movie-image">
+            <div class="image-blur-overlay"></div>
+          </div>
+      
+          <h3 id="series-title">Series Title</h3>
+          <p id="series-description">This is a short description of the series...</p>
+      
+          <p><strong>Genre:</strong> <span id="series-genre" class="genre-tags-container">Action</span></p>
+          <p><strong>Release Date:</strong><span id="series-time"> 5 May 1999</span></p>
+
+          <div class="season-selector mt-4">
+            <label for="season-select" class="block text-sm font-medium text-gray-200 mb-1">Select Season:</label>
+            <select id="season-select" class="bg-gray-800 text-white p-2 rounded w-full">
+            </select>
+          </div>
+
+          <!-- <div id="episode-container" class="mt-4">
+            <h4 class="text-lg font-semibold text-gray-200 mb-2">Episodes</h4>
+            <ul id="episode-list" class="list-disc list-inside text-gray-300">
+              <!-- Episodes will be populated here -->
+            </ul>
+          </div> -->
+
+        </div>
+      </div>
 
 </body>
 </html>

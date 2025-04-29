@@ -42,8 +42,8 @@ body.modal-open {
 
 .movie-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 4 movies per row */
-    gap: 10px;
+    grid-template-columns: repeat(3, 1fr); /* 3 movies per row */
+    gap: 40px;
     padding: 20px;
     padding-right: 10rem;
     justify-content: center;
@@ -223,7 +223,13 @@ body.modal-open {
     font-weight: 500;
   }
 
+  #series-modal .play-button {
+    top: 45%; /* Slightly higher */
+  }
   
+  #series-modal .interaction i {
+    top: 45%; /* Match with play button */
+  }
 
 .header{
     position: relative;
