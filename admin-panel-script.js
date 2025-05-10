@@ -12,7 +12,7 @@ function showContent(setting) {
     const content = {
         addUser: `
             <h2>Add User</h2>
-            <p> Below is a form for adding a user manually. Don't forget to click on submit!</p>
+            <p> Below is a form for manually adding a user. Don't forget to click on submit!</p>
             <form>
                 <label for="username">Username:</label>
                 <input type="text" id="username" placeholder="Enter username"><br>
@@ -39,7 +39,8 @@ function showContent(setting) {
 
         getAllUsers: `<h2>All Users</h2><p>Display list of users here.</p>`,
 
-        updateUser: `<h2>Update User</h2>
+        updateUser: `
+            <h2>Update User</h2>
             <p> Enter below the ID of the user you wish to make changes </p>
             <br>
                     <form>
@@ -53,8 +54,31 @@ function showContent(setting) {
                     </form>
                     `,
 
-        deleteUser: `<h2>Delete User</h2><p>Enter user ID to delete.</p>`,
-        addRole: `<h2>Add Role</h2><p>Add role form here.</p>`,
+        deleteUser: `<h2>Delete User</h2>
+                <p>Enter user ID to delete.</p>
+                <br>
+                    <form>
+                        <label for="id"> User ID:</label>
+                        <input type="number" id="deleteUser" placeholder="Enter the user's id"><br>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                    `,
+
+        addRole: `<h2>Add Role</h2>
+                <p>Form for adding a role if needed.</p>
+                <br>
+
+                <form>
+                    <label for="id">Add Role: </label>
+                    <input type="text" id="name" placeholder="Enter the name of the role"><br>
+
+                    <button type="submit">Submit</button>
+                </form>
+        
+        
+        
+        `,
         addRoleToUser: `<h2>Assign Role</h2><p>Assign role form here.</p>`,
         getRoleById: `<h2>Get Role</h2><p>Search for role by ID.</p>`,
         deleteRole: `<h2>Delete Role</h2><p>Enter role ID to delete.</p>`,
