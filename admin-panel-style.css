@@ -212,4 +212,14 @@ hr{
     border-radius: 5px;
     border: 1px solid gray;
     color: white;
+    width: 25rem; /* auto-size to content */
+    height: auto;
+    margin: 1rem auto 0 auto; /* centers the box */
+    padding-right: 12rem;
+    opacity: 1;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
+
+
+
