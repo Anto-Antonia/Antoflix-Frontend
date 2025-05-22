@@ -22,8 +22,9 @@ function showContent(setting) {
                 <label for="password">Password:</label>
                 <input type="password" id="password" placeholder="Enter password"><br>
 
-                <button type="submit">Submit</button>
+                <button type="submit" id="addUserBtn">Submit</button>
             </form>
+            <div id="addUserMessage"></div>
         `,
         getUserById: `
             <h2>Get User By ID</h2>
@@ -92,6 +93,19 @@ function showContent(setting) {
 
     // Update the right-side content
     settingsContent.innerHTML = content[setting] || "<h2>Option not found</h2>";
+
+    // if(setting === "addUser"){
+    //     const userName = document.getElementById("username");
+    //     const userEmail = document.getElementById("email");
+    //     const userPassword = document.getElementById("passwprd");
+    //     const addUserBtn = document.getElementById("addUserBtn");
+
+    // };
+
+    // addUserBtn.addEventListener("input", function() {
+       
+    // }
+    //     )
 
     if(setting === "getUserById"){
         const userIdInput = document.getElementById("userId");
